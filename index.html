@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Management</h1>
+    </header>
+
+    <div class="container">
+        <h2>Add a Vehicle</h2>
+        <div class="form-group">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" placeholder="E.g. Ford">
+        </div>
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" id="model" placeholder="E.g. Focus">
+        </div>
+        <div class="form-group">
+            <label for="licensePlate">License Plate:</label>
+            <input type="text" id="licensePlate" placeholder="E.g. 3333BNG">
+        </div>
+        <div class="form-group">
+            <label for="wheels">Number of Wheels:</label>
+            <input type="text" id="wheels" placeholder="Should be 4">
+        </div>
+        <button onclick="addVehicle()">Add Vehicle</button>
+
+        <h2>Vehicle List</h2>
+        <ul class="vehicle-list" id="vehicleList">
+        </ul>
+    </div>
+    <script src="js/vehicle.js"></script>
+    <script src="js/car.js"></script>
+</body>
+</html>
